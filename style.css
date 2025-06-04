@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url('/images/fundoSite-V2.jpg');
+    background-size: cover;
+    /* Faz a imagem preencher o body */
+    background-repeat: repeat;
+    /* Impede a repetição da imagem */
+    background-position: center;
+    /* Centraliza a imagem no body */
+    height: 100vh;
+    /* Garante que o body tenha altura total da tela */
+    width: 100%;
+    padding: 80px;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-content {
+    display: flex;
+    border: 1px solid rgba(66, 87, 77, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(41, 71, 43, 0.8);
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    padding: 40px;
+    gap: 70px;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+
+.imgV2 {
+    width: 8%;
+}
+
+.container-content iframe {
+    border-radius: 10px;
+}
+
+.container-text button {
+    border: 1px solid rgb(0, 118, 43);
+    background: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin-top: 24px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: rgb(0, 118, 43);
+    font-size: 17px;
+}
+
+.container-text button:hover {
+    background: rgb(0, 118, 43);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .imgV2 {
+        width: 12%;
+    }
+
+    .container-main {
+        padding-top: 2px;
+        align-items: center;
+    }
+
+    .container-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+        gap: 20px;
+    }
+
+    iframe {
+        margin-top: 20px;
+        height: 80%;
+        width: 100%;
+    }
+
+    .container-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .container-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .container-text p {
+        font-size: 1.2rem;
+    }
+
+    .container-text button {
+        align-self: center;
+        font-size: 1.2rem;
+        padding: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgV2 {
+        width: 22%;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        padding: 24px 32px;
+
+    }
+
+    iframe {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container-main {
+        padding-top: 1px;
+        align-items: center;
+    }
+
+    .container-content {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 32px;
+    }
+
+    .container-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .container-text p {
+        font-size: 1rem;
+    }
+
+    .container-text button {
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    .container-main {
+        width: 100%;
+    }
+
+}
